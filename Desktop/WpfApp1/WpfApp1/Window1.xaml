@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window1" Height="380" Width="525">
+    <Grid>
+        <DockPanel>
+            <Border Background="Gray" Width="518" Margin="0,0,0,303">
+                <StackPanel>
+                    <DockPanel>
+                        <Label Content="Membros" HorizontalAlignment="Left"/>
+                    </DockPanel>
+                    <DockPanel>
+                        <Label Content="Organização" HorizontalAlignment="Left"/>
+                    </DockPanel>
+                    <DockPanel>
+                        <Label Content="(Extra)" HorizontalAlignment="Left"/>
+                    </DockPanel>
+                </StackPanel>
+            </Border>
+        </DockPanel>
+    </Grid>
+</Window>
