@@ -30,3 +30,20 @@ C:\Users\olive\Dropbox\3º Ano\IHC\Prática\WPF\WpfApp1\WpfApp1\obj\Debug\WpfApp
 C:\Users\olive\Dropbox\3º Ano\IHC\Prática\WPF\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
 C:\Users\olive\Dropbox\3º Ano\IHC\Prática\WPF\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
 C:\Users\olive\Dropbox\3º Ano\IHC\Prática\WPF\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csprojResolveAssemblyReference.cache
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\LoginWindow.g.cs
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\Window1.g.cs
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\LoginWindow.baml
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\Window1.baml
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.Cache
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
