@@ -5,22 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Window1" Height="380" Width="525">
-    <Grid>
-        <DockPanel>
-            <Border Background="Gray" Width="518" Margin="0,0,0,303">
-                <StackPanel>
-                    <DockPanel>
-                        <Label Content="Membros" HorizontalAlignment="Left"/>
-                    </DockPanel>
-                    <DockPanel>
-                        <Label Content="Organização" HorizontalAlignment="Left"/>
-                    </DockPanel>
-                    <DockPanel>
-                        <Label Content="(Extra)" HorizontalAlignment="Left"/>
-                    </DockPanel>
-                </StackPanel>
-            </Border>
-        </DockPanel>
+        Title="Window1" Height="381.772" Width="525" Background="White">
+    <Grid x:Name="mygrid" Margin="0,0,0.4,136">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Button1" Content="Extra" Grid.Column="2" HorizontalAlignment="Left" Margin="0.4,0,0,0" VerticalAlignment="Top" Width="172" Height="42" BorderBrush="{x:Null}" OpacityMask="Black" ClickMode="Hover" Click="Button1_MouseHover"/>
+        <Button Content="Button" Grid.Column="2" HorizontalAlignment="Left" Margin="0.4,42,0,0" VerticalAlignment="Top" Width="172" Height="42" BorderBrush="{x:Null}" OpacityMask="Black"/>
+        <Button Content="Button" Grid.Column="2" HorizontalAlignment="Left" Margin="0.4,84,0,0" VerticalAlignment="Top" Width="172" Height="42" BorderBrush="{x:Null}" OpacityMask="Black"/>
+        <Button Content="Button" Grid.Column="2" HorizontalAlignment="Left" Margin="0.4,126,0,0" VerticalAlignment="Top" Width="172" Height="42" BorderBrush="{x:Null}" OpacityMask="Black"/>
+        <Button Content="Button" Grid.Column="2" HorizontalAlignment="Left" Margin="0.4,170,0,0" VerticalAlignment="Top" Width="172" Height="42" BorderBrush="{x:Null}" OpacityMask="Black"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="172,0,0,0" VerticalAlignment="Top" Width="172" Height="42" BorderBrush="{x:Null}" OpacityMask="Black" Grid.ColumnSpan="2"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="172,42,0,0" VerticalAlignment="Top" Width="172" Height="42" BorderBrush="{x:Null}" OpacityMask="Black" Grid.ColumnSpan="2"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="172,84,0,0" VerticalAlignment="Top" Width="172" Height="42" BorderBrush="{x:Null}" OpacityMask="Black" Grid.ColumnSpan="2"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="172,126,0,0" VerticalAlignment="Top" Width="172" Height="42" BorderBrush="{x:Null}" OpacityMask="Black" Grid.ColumnSpan="2"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="172,170,0,0" VerticalAlignment="Top" Width="172" Height="42" BorderBrush="{x:Null}" OpacityMask="Black" Grid.ColumnSpan="2"/>
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="172" Height="42" BorderBrush="{x:Null}" OpacityMask="Black"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="0,42,0,0" VerticalAlignment="Top" Width="172" Height="42" BorderBrush="{x:Null}" OpacityMask="Black"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="0,84,0,0" VerticalAlignment="Top" Width="172" Height="42" BorderBrush="{x:Null}" OpacityMask="Black"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="0,126,0,0" VerticalAlignment="Top" Width="172" Height="42" BorderBrush="{x:Null}" OpacityMask="Black"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="0,170,0,0" VerticalAlignment="Top" Width="172" Height="42" BorderBrush="{x:Null}" OpacityMask="Black"/>
     </Grid>
 </Window>

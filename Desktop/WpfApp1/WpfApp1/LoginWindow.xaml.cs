@@ -24,5 +24,12 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void btnSignIn_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 win2 = new Window1();
+            win2.Show();
+            this.Close();
+        }
     }
 }
