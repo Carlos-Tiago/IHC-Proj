@@ -47,3 +47,5 @@ C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.resources
 C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
 C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.Cache
 C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\SignupWindow.g.cs
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\SignupWindow.baml

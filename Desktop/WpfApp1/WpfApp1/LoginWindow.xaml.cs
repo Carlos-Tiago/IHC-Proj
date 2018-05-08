@@ -31,5 +31,12 @@ namespace WpfApp1
             win2.Show();
             this.Close();
         }
+
+        private void btnSignUp_Click(object sender, RoutedEventArgs e)
+        {
+            SignupWindow win2 = new SignupWindow();
+            win2.Show();
+            this.Close();
+        }
     }
 }

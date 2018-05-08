@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\olive\Desktop\WpfApp1\WpfApp1\App.xaml
-2462529049
+3-400394766
 
-10256927290
+11-207646026
 131569487696
-MainWindow.xaml;Window1.xaml;
+LoginWindow.xaml;SignupWindow.xaml;Window1.xaml;
 
-True
+False
 
