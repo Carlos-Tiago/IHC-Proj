@@ -49,3 +49,10 @@ C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource
 C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
 C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\SignupWindow.g.cs
 C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\SignupWindow.baml
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\HomeWindow.g.cs
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\bin\Debug\MaterialDesignColors.dll
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\App.baml
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\HomeWindow.baml

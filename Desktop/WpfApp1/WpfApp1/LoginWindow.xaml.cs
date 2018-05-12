@@ -25,17 +25,17 @@ namespace WpfApp1
             InitializeComponent();
         }
 
-        private void btnSignIn_Click(object sender, RoutedEventArgs e)
+        private void ButtonLogin_Click(object sender, RoutedEventArgs e)
         {
-            Window1 win2 = new Window1();
+            HomeWindow win2 = new HomeWindow();
             win2.Show();
             this.Close();
         }
 
-        private void btnSignUp_Click(object sender, RoutedEventArgs e)
+        private void Hyperlink_Click(object sender, RoutedEventArgs e)
         {
-            SignupWindow win2 = new SignupWindow();
-            win2.Show();
+            SignupWindow win4 = new SignupWindow();
+            win4.Show();
             this.Close();
         }
     }
