@@ -18,25 +18,17 @@ using System.Windows.Controls.Primitives;
 namespace WpfApp1
 {
     /// <summary>
-    /// Lógica interna para HomeWindow.xaml
+    /// Lógica interna para AccountWindow.xaml
     /// </summary>
-    public partial class HomeWindow : Window
+    public partial class AccountWindow : Window
     {
-        public HomeWindow()
+        public AccountWindow()
         {
             InitializeComponent();
         }
-
         private void ButtonPopUpLogout_Click(object sender, RoutedEventArgs e)
         {
             LoginWindow win3 = new LoginWindow();
-            win3.Show();
-            this.Close();
-        }
-
-        private void AccountClick(object sender, RoutedEventArgs e)
-        {
-            AccountWindow win3 = new AccountWindow();
             win3.Show();
             this.Close();
         }
@@ -68,12 +60,19 @@ namespace WpfApp1
         {
             Popup myPopup = new Popup();
             myPopup.IsOpen = true;
-            
+
         }
 
         private void OrganizationItemSelected(object sender, RoutedEventArgs e)
         {
-            
+
+        }
+
+        private void AccountClick(object sender, RoutedEventArgs e)
+        {
+            AccountWindow win3 = new AccountWindow();
+            win3.Show();
+            this.Close();
         }
     }
 }

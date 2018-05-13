@@ -56,3 +56,5 @@ C:\Users\olive\Desktop\WpfApp1\WpfApp1\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\Users\olive\Desktop\WpfApp1\WpfApp1\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\App.baml
 C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\HomeWindow.baml
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\AccountWindow.g.cs
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\AccountWindow.baml
