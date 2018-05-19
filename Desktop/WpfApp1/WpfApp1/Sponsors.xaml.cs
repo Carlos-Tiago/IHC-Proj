@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -20,11 +28,26 @@ namespace WpfApp1
     /// <summary>
     /// Lógica interna para HomeWindow.xaml
     /// </summary>
-    public partial class HomeWindow : Window
+    public partial class Sponsors : Window
     {
-        public HomeWindow()
+        private static int i = 0;
+        private static int j = 1;
+        private static int k = 2;
+        private static string[] albums = new string[]
+        {
+            @"Backgrounds/sportzone.jpg",
+            @"Backgrounds/ua.jpg",
+            @"Backgrounds/zonaverde.png",
+            @"Backgrounds/beiramar.png",
+            @"Backgrounds/hospital.jpg"
+        };
+
+        public Sponsors()
         {
             InitializeComponent();
+            Main.Source = new BitmapImage(new Uri(albums[j], UriKind.Relative));
+            Right.Source = new BitmapImage(new Uri(albums[k], UriKind.Relative));
+            Left.Source = new BitmapImage(new Uri(albums[i], UriKind.Relative));
         }
 
         private void ButtonPopUpLogout_Click(object sender, RoutedEventArgs e)
@@ -103,12 +126,30 @@ namespace WpfApp1
         {
             Popup myPopup = new Popup();
             myPopup.IsOpen = true;
-            
+
         }
 
         private void OrganizationItemSelected(object sender, RoutedEventArgs e)
         {
-            
+
+        }
+
+        private void ButtonSlideRight_Click(object sender, RoutedEventArgs e)
+        {
+            i--; j--; k--;
+            if (i < 0) i = albums.Length - 1; if (j < 0) j = albums.Length - 1; if (k < 0) k = albums.Length - 1;
+            Main.Source = new BitmapImage(new Uri(albums[j], UriKind.Relative));
+            Right.Source = new BitmapImage(new Uri(albums[k], UriKind.Relative));
+            Left.Source = new BitmapImage(new Uri(albums[i], UriKind.Relative));
+        }
+
+        private void ButtonSlideLeft_Click(object sender, RoutedEventArgs e)
+        {
+            i++; j++; k++;
+            if (i >= albums.Length) i = 0; if (j >= albums.Length) j = 0; if (k >= albums.Length) k = 0;
+            Main.Source = new BitmapImage(new Uri(albums[j], UriKind.Relative));
+            Left.Source = new BitmapImage(new Uri(albums[k], UriKind.Relative));
+            Right.Source = new BitmapImage(new Uri(albums[i], UriKind.Relative));
         }
     }
 }

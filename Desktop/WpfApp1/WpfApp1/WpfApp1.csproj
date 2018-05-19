@@ -63,16 +63,36 @@
     <Compile Include="AccountWindow.xaml.cs">
       <DependentUpon>AccountWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AddNewMember.xaml.cs">
+      <DependentUpon>AddNewMember.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Events.xaml.cs">
+      <DependentUpon>Events.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HomeWindow.xaml.cs">
       <DependentUpon>HomeWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RenewMember.xaml.cs">
+      <DependentUpon>RenewMember.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SignupWindow.xaml.cs">
       <DependentUpon>SignupWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sponsors.xaml.cs">
+      <DependentUpon>Sponsors.xaml</DependentUpon>
     </Compile>
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
     <Page Include="AccountWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddNewMember.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Events.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -92,7 +112,15 @@
       <DependentUpon>LoginWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RenewMember.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SignupWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sponsors.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -129,7 +157,26 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="home.png" />
+    <Resource Include="Backgrounds\home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Backgrounds\cozinha.jpg" />
+    <Resource Include="Backgrounds\futebol.jpg" />
+    <Resource Include="Backgrounds\palestra.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Backgrounds\sportzone.jpg" />
+    <Resource Include="Backgrounds\ua.jpg" />
+    <Resource Include="Backgrounds\zonaverde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Backgrounds\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Backgrounds\beiramar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Backgrounds\hospital.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

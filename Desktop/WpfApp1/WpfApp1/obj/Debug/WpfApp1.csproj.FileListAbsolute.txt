@@ -58,3 +58,11 @@ C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\App.baml
 C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\HomeWindow.baml
 C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\AccountWindow.g.cs
 C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\AccountWindow.baml
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\AddNewMember.g.cs
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\AddNewMember.baml
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\RenewMember.g.cs
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\RenewMember.baml
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\Events.g.cs
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\Events.baml
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\Sponsors.g.cs
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\Sponsors.baml

@@ -1,4 +1,4 @@
-﻿<Window x:Class="WpfApp1.HomeWindow"
+﻿<Window x:Class="WpfApp1.RenewMember"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -35,6 +35,7 @@
         <Grid Height="60" VerticalAlignment="Top" Background="#FF26569B">
             <TextBlock Text="AE de IHC" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22"></TextBlock>
             <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right">
+                
                 <materialDesign:PopupBox Margin="10" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
                     <StackPanel Width="150">
                         <Button Content="Account" Click="AccountClick"/>
@@ -50,8 +51,30 @@
             <Grid.Background>
                 <ImageBrush ImageSource="Backgrounds/home.jpg"></ImageBrush>
             </Grid.Background>
+            <Label Margin="50" FontSize="30" Foreground="White">Renew Membership</Label>
+            <Label Margin="50 150" FontSize="20" Foreground="White">Choose a Member</Label>
+            <ComboBox x:Name="selectOption" Text="Select Option" 
+                 SelectionChanged="selectOption_SelectionChanged" 
+                 SelectedValue="{Binding VMselectedOption, Mode=TwoWay}" 
+                 SelectedValuePath="Content" Margin="300 150" HorizontalAlignment="Left" FontSize="18" Foreground="Black" VerticalAlignment="Top" Width="150" Height="35" BorderBrush="Black">
+                <ComboBoxItem Name="cbb1" Foreground="Black" FontSize="18">Member1</ComboBoxItem>
+                <ComboBoxItem Name="cbb2" Foreground="Black" FontSize="18">Member2</ComboBoxItem>
+                <ComboBoxItem Name="cbb3" Foreground="Black" FontSize="18">Member3</ComboBoxItem>
+                <ComboBoxItem Name="cbb4" Foreground="Black" FontSize="18">Member4</ComboBoxItem>
+            </ComboBox>
+            <Label Margin="50 200" FontSize="20" Foreground="White">Choose a Time Period</Label>
+            <ComboBox x:Name="selectOption2" Text="Select Option" 
+                 SelectionChanged="selectOption_SelectionChanged" 
+                 SelectedValue="{Binding VMselectedOption, Mode=TwoWay}" 
+                 SelectedValuePath="Content" Margin="300 200" HorizontalAlignment="Left" FontSize="18" Foreground="Black" VerticalAlignment="Top" Width="150" Height="35" BorderBrush="Black">
+                <ComboBoxItem Name="cb1" Foreground="Black" FontSize="18">1 Month</ComboBoxItem>
+                <ComboBoxItem Name="cb2" Foreground="Black" FontSize="18">2 Months</ComboBoxItem>
+                <ComboBoxItem Name="cb3" Foreground="Black" FontSize="18">6 Months</ComboBoxItem>
+                <ComboBoxItem Name="cb4" Foreground="Black" FontSize="18">1 Year</ComboBoxItem>
+            </ComboBox>
+            <Button Width="150" Height="35" VerticalAlignment="Bottom" Margin="0 70" Click="MemberAdded">Renew Member</Button>
         </Grid>
-
+        
         <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="#FF211874">
             <StackPanel>
 

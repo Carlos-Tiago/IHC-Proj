@@ -1,4 +1,4 @@
-﻿<Window x:Class="WpfApp1.HomeWindow"
+﻿<Window x:Class="WpfApp1.Sponsors"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -35,6 +35,7 @@
         <Grid Height="60" VerticalAlignment="Top" Background="#FF26569B">
             <TextBlock Text="AE de IHC" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22"></TextBlock>
             <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right">
+                
                 <materialDesign:PopupBox Margin="10" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
                     <StackPanel Width="150">
                         <Button Content="Account" Click="AccountClick"/>
@@ -50,8 +51,18 @@
             <Grid.Background>
                 <ImageBrush ImageSource="Backgrounds/home.jpg"></ImageBrush>
             </Grid.Background>
+            <Label Margin="50" FontSize="30" Foreground="White">Our Current Sponsors</Label>
+            <Image x:Name="Main" VerticalAlignment="Center" HorizontalAlignment="Center" Height="230" Width="230"></Image>
+            <Image x:Name="Left" VerticalAlignment="Center" HorizontalAlignment="Left" Height="160" Width="160" Margin="100 0" Opacity="0.25"></Image>
+            <Image x:Name="Right" VerticalAlignment="Center" HorizontalAlignment="Right" Height="160" Width="160" Margin="100 0" Opacity="0.25"></Image>
+            <Button x:Name="SlideLeft" Margin="100" Width="80" Height="80" Background="{x:Null}" BorderBrush="{x:Null}"  VerticalAlignment="Center" HorizontalAlignment="Left" Visibility="Visible" Click="ButtonSlideLeft_Click">
+                <materialDesign:PackIcon Foreground="White" Kind="ArrowLeft" Width="40" Height="40"/>
+            </Button>
+            <Button x:Name="SlideRight" Margin="100" Width="80" Height="80" Background="{x:Null}" BorderBrush="{x:Null}"  VerticalAlignment="Center" HorizontalAlignment="Right" Visibility="Visible" Click="ButtonSlideRight_Click">
+                <materialDesign:PackIcon Foreground="White" Kind="ArrowRight" Width="40" Height="40"/>
+            </Button>
         </Grid>
-
+        
         <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="#FF211874">
             <StackPanel>
 
@@ -81,7 +92,7 @@
                                 <StackPanel>
                                     <Button Content="Register New Member" Click="AddNewMemberButton"></Button>
                                     <Button Content="Renew Member" Click="RenewMemberButton"></Button>
-
+                                    
                                 </StackPanel>
                             </materialDesign:PopupBox>
                             <TextBlock Text="Members" VerticalAlignment="Center" Margin="10 10"></TextBlock>
@@ -117,6 +128,6 @@
                     </ListViewItem>
                 </ListView>
             </StackPanel>
-        </Grid>
+        </Grid>        
     </Grid>
 </Window>

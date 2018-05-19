@@ -14,7 +14,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image Source="home.png" Width="100" Height="100" VerticalAlignment="Top" Margin="20"></Image>
+        <Image Source="Backgrounds/login.png" Width="100" Height="100" VerticalAlignment="Top" Margin="20"></Image>
         <Rectangle Width="280" Height="240" Fill="White" VerticalAlignment="Bottom" Margin="0,100">
             <Rectangle.Effect>
                 <DropShadowEffect Color="#FFBBBBBB" Direction="0" RenderingBias="Quality" BlurRadius="15" ShadowDepth="1"></DropShadowEffect>

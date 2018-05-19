@@ -20,9 +20,9 @@ namespace WpfApp1
     /// <summary>
     /// Lógica interna para HomeWindow.xaml
     /// </summary>
-    public partial class HomeWindow : Window
+    public partial class AddNewMember : Window
     {
-        public HomeWindow()
+        public AddNewMember()
         {
             InitializeComponent();
         }
@@ -76,6 +76,11 @@ namespace WpfApp1
             this.Close();*/
         }
 
+        private void selectOption_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var selectedValue = selectOption.SelectedValue;
+        }
+
         private void ButtonCloseMenu_Click(object sender, RoutedEventArgs e)
         {
             ButtonOpenMenu.Visibility = Visibility.Visible;
@@ -103,12 +108,21 @@ namespace WpfApp1
         {
             Popup myPopup = new Popup();
             myPopup.IsOpen = true;
-            
+
         }
 
         private void OrganizationItemSelected(object sender, RoutedEventArgs e)
         {
-            
+
+        }
+
+        private void MemberAdded(object sender, RoutedEventArgs e)
+        {
+            HomeWindow win = new HomeWindow();
+            win.Show();
+            this.Close();
         }
     }
 }
+
+

@@ -20,9 +20,9 @@ namespace WpfApp1
     /// <summary>
     /// Lógica interna para HomeWindow.xaml
     /// </summary>
-    public partial class HomeWindow : Window
+    public partial class Events : Window
     {
-        public HomeWindow()
+        public Events()
         {
             InitializeComponent();
         }
@@ -103,12 +103,12 @@ namespace WpfApp1
         {
             Popup myPopup = new Popup();
             myPopup.IsOpen = true;
-            
+
         }
 
         private void OrganizationItemSelected(object sender, RoutedEventArgs e)
         {
-            
+
         }
     }
 }

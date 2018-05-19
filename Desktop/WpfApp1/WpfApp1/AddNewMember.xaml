@@ -1,4 +1,4 @@
-﻿<Window x:Class="WpfApp1.HomeWindow"
+﻿<Window x:Class="WpfApp1.AddNewMember"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -30,11 +30,12 @@
         </EventTrigger>
     </Window.Triggers>
 
-    <Grid>
-        
+    <Grid >
+
         <Grid Height="60" VerticalAlignment="Top" Background="#FF26569B">
             <TextBlock Text="AE de IHC" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22"></TextBlock>
             <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right">
+                
                 <materialDesign:PopupBox Margin="10" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
                     <StackPanel Width="150">
                         <Button Content="Account" Click="AccountClick"/>
@@ -50,8 +51,23 @@
             <Grid.Background>
                 <ImageBrush ImageSource="Backgrounds/home.jpg"></ImageBrush>
             </Grid.Background>
+            <Label Margin="50,50,49.6,50.4" FontSize="30" Foreground="White" Grid.ColumnSpan="2">Add New Member</Label>
+            <TextBox materialDesign:HintAssist.Hint="NAME" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" Margin="50,100,49.6,0" Grid.ColumnSpan="2"></TextBox>
+            <TextBox materialDesign:HintAssist.Hint="AGE" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" Margin="50,150,49.6,0" Grid.ColumnSpan="2"></TextBox>
+            <TextBox materialDesign:HintAssist.Hint="COURSE" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" Margin="50,200,49.6,0" Grid.ColumnSpan="2"></TextBox>
+            <TextBox materialDesign:HintAssist.Hint="COURSE YEAR" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" Margin="50,0,49.6,215.4" Grid.ColumnSpan="2"></TextBox>
+            <ComboBox x:Name="selectOption" Text="Select Option" 
+                 SelectionChanged="selectOption_SelectionChanged" 
+                 SelectedValue="{Binding VMselectedOption, Mode=TwoWay}" 
+                 SelectedValuePath="Content" FontSize="18" Foreground="Black" VerticalAlignment="Bottom" Margin="0 125" HorizontalAlignment="Center" Width="150" Height="35" BorderBrush="Black">
+                <ComboBoxItem Name="cbb1" Foreground="Black" FontSize="18">President</ComboBoxItem>
+                <ComboBoxItem Name="cbb2" Foreground="Black" FontSize="18">Treasurer</ComboBoxItem>
+                <ComboBoxItem Name="cbb3" Foreground="Black" FontSize="18">Event Organizer</ComboBoxItem>
+                <ComboBoxItem Name="cbb4" Foreground="Black" FontSize="18">Spokesperson</ComboBoxItem>
+            </ComboBox>
+            <Button Width="150" Height="35" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 50" Click="MemberAdded">Add Member</Button>
         </Grid>
-
+        
         <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="#FF211874">
             <StackPanel>
 
@@ -81,7 +97,7 @@
                                 <StackPanel>
                                     <Button Content="Register New Member" Click="AddNewMemberButton"></Button>
                                     <Button Content="Renew Member" Click="RenewMemberButton"></Button>
-
+                                    
                                 </StackPanel>
                             </materialDesign:PopupBox>
                             <TextBlock Text="Members" VerticalAlignment="Center" Margin="10 10"></TextBlock>

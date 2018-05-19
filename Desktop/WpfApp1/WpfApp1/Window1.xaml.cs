@@ -23,17 +23,5 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
-        private void Button1_Click(object sender, RoutedEventArgs e) {
-        }
-        private void Button1_MouseHover(object sender, RoutedEventArgs e)
-        {
-            this.mygrid.Width = 525;
-            this.mygrid.Height = 380;
-        }
-
-        private void Button_MouseLeave(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
