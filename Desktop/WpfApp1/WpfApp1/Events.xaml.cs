@@ -48,6 +48,14 @@ namespace WpfApp1
             this.Close();
         }
 
+        private void NewEventClick(object sender, RoutedEventArgs e)
+        {
+            NewEvent win3 = new NewEvent();
+            win3.Show();
+            this.Close();
+        }
+        
+
         private void AccountClick(object sender, RoutedEventArgs e)
         {
             AccountWindow win3 = new AccountWindow();
@@ -71,9 +79,9 @@ namespace WpfApp1
 
         private void ReunionsClick(object sender, RoutedEventArgs e)
         {
-            /*Reunions win3 = new Reunions();
+            ReunionsWindow win3 = new ReunionsWindow();
             win3.Show();
-            this.Close();*/
+            this.Close();
         }
 
         private void ButtonCloseMenu_Click(object sender, RoutedEventArgs e)

@@ -1,0 +1,136 @@
+﻿<Window x:Class="WpfApp1.ReunionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Height="600" Width="1080" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Foreground="White">
+    <Window.Resources>
+        <Storyboard x:Key="MenuOpen">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="150"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="MenuClose">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="60"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenMenu">
+            <BeginStoryboard Storyboard="{StaticResource MenuOpen}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu">
+            <BeginStoryboard Storyboard="{StaticResource MenuClose}"/>
+        </EventTrigger>
+    </Window.Triggers>
+
+    <Grid>
+
+        <Grid Height="60" VerticalAlignment="Top" Background="#FF26569B">
+            <TextBlock Text="AE de IHC" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22"></TextBlock>
+            <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right">
+                <materialDesign:PopupBox Margin="10" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
+                    <StackPanel Width="150">
+                        <Button Content="Account" Click="AccountClick"/>
+                        <Button Content="Settings"/>
+                        <Separator></Separator>
+                        <Button x:Name="BottonPopUpLogout" Content="Logout" Click="ButtonPopUpLogout_Click"/>
+                    </StackPanel>
+                </materialDesign:PopupBox>
+            </StackPanel>
+        </Grid>
+
+        <Grid Margin="60 60 0 0">
+            <Grid.Background>
+                <ImageBrush ImageSource="Backgrounds/home.jpg"></ImageBrush>
+            </Grid.Background>
+            <Label Margin="50" FontSize="30" Foreground="White" Grid.ColumnSpan="2">This Week's Reunions</Label>
+            <Label Margin="50 100" FontSize="20" Foreground="White" Grid.ColumnSpan="2">Monday 21st May @ 10am</Label>
+            <Label Margin="50 125" FontSize="16" Foreground="White" Grid.ColumnSpan="2">-> We need to discuss an event sponsored by Aveiro's hospital.</Label>
+            <Label Margin="50 175" FontSize="20" Foreground="White" Grid.ColumnSpan="2">Tuesday 22nd May @ 11am</Label>
+            <Label Margin="50 200" FontSize="16" Foreground="White" Grid.ColumnSpan="2">-> Talking with our treasurer; How good are we going?</Label>
+            <StackPanel HorizontalAlignment="Right" Margin="50">
+                <materialDesign:PopupBox Margin="10" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
+                    <materialDesign:PopupBox.ToggleContent>
+                        <materialDesign:PackIcon Kind="Plus" Width="30" Height="30" Foreground="White"/>
+                    </materialDesign:PopupBox.ToggleContent>
+                    <StackPanel Width="150">
+                        <Button Content="New Reunion" Click="NewReunionClick"/>
+                    </StackPanel>
+                </materialDesign:PopupBox>
+            </StackPanel>
+        </Grid>
+
+        <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="#FF211874">
+            <StackPanel>
+                <Grid Height="60" Background="White">
+                    <Button x:Name="ButtonCloseMenu" Width="60" Height="60" Background="{x:Null}" BorderBrush="{x:Null}"  VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Collapsed" Click="ButtonCloseMenu_Click">
+                        <materialDesign:PackIcon Foreground="#FF211874" Kind="ArrowLeft" Width="25" Height="25"/>
+                    </Button>
+                    <Button x:Name="ButtonOpenMenu" Width="60" Height="60" Background="{x:Null}" BorderBrush="{x:Null}"  VerticalAlignment="Top" HorizontalAlignment="Right" Click="ButtonOpenMenu_Click">
+                        <materialDesign:PackIcon Foreground="#FF211874" Kind="Menu" Width="25" Height="25"/>
+                    </Button>
+                </Grid>
+
+                <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" Foreground="#FF26569B">
+                    <ListViewItem Height="60" Selected="HomeItemSelected">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Home" Width="25" Height="25" Margin="10" VerticalAlignment="Center"></materialDesign:PackIcon>
+                            <TextBlock Text="Home" VerticalAlignment="Center" Margin="10 10"></TextBlock>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PopupBox HorizontalAlignment="Center" Width="25" Height="25" Margin="10" VerticalAlignment="Center" PlacementMode="RightAndAlignTopEdges" StaysOpen="False">
+                                <materialDesign:PopupBox.ToggleContent>
+                                    <materialDesign:PackIcon Kind="Human" Width="25" Height="25" Foreground="#FF26569B"/>
+                                </materialDesign:PopupBox.ToggleContent>
+                                <StackPanel>
+                                    <Button Content="Register New Member" Click="AddNewMemberButton"></Button>
+                                    <Button Content="Renew Member" Click="RenewMemberButton"></Button>
+
+                                </StackPanel>
+                            </materialDesign:PopupBox>
+                            <TextBlock Text="Members" VerticalAlignment="Center" Margin="10 10"></TextBlock>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PopupBox HorizontalAlignment="Center" Width="25" Height="25" Margin="10" VerticalAlignment="Center" PlacementMode="RightAndAlignTopEdges" StaysOpen="False">
+                                <materialDesign:PopupBox.ToggleContent>
+                                    <materialDesign:PackIcon Kind="DatabaseSearch" Width="25" Height="25" Foreground="#FF26569B"/>
+                                </materialDesign:PopupBox.ToggleContent>
+                                <StackPanel>
+                                    <Button Content="Events" Click="EventClick"></Button>
+                                    <Button Content="Reunions" Click="ReunionsClick"></Button>
+
+                                    <Button Content="Sponsors" Click="SponsorsClick"></Button>
+                                </StackPanel>
+                            </materialDesign:PopupBox>
+                            <TextBlock Text="Organization" VerticalAlignment="Center" Margin="10 10"></TextBlock>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="60" Selected="TestItemSelected">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Star" Width="25" Height="25" Margin="10" VerticalAlignment="Center"/>
+                            <TextBlock Text="Extra" VerticalAlignment="Center" Margin="10 10"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="60"  Selected="GitHubItemSelected">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="GithubBox" Width="25" Height="25" Margin="10" VerticalAlignment="Center"/>
+                            <TextBlock Text="GitHub" VerticalAlignment="Center" Margin="10 10"/>
+                        </StackPanel>
+                    </ListViewItem>
+                </ListView>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

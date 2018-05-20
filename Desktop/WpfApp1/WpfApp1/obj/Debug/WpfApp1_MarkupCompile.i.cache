@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\
+C:\Users\Andre\Desktop\IHC-Proj\Desktop\WpfApp1\WpfApp1\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-C:\Users\olive\Desktop\WpfApp1\WpfApp1\App.xaml
-91028331809
+C:\Users\Andre\Desktop\IHC-Proj\Desktop\WpfApp1\WpfApp1\App.xaml
+12-966034750
 
-17-425928912
-15188397370
-AccountWindow.xaml;AddNewMember.xaml;Events.xaml;HomeWindow.xaml;LoginWindow.xaml;RenewMember.xaml;SignupWindow.xaml;Sponsors.xaml;Window1.xaml;
+20-166422236
+15-1356671995
+AccountWindow.xaml;AddNewMember.xaml;Events.xaml;HomeWindow.xaml;LoginWindow.xaml;NewEvent.xaml;NewReunion.xaml;RenewMember.xaml;ReunionsWindow.xaml;SignupWindow.xaml;Sponsors.xaml;Window1.xaml;
 
 False
 

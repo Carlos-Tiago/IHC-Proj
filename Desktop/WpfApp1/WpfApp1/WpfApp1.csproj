@@ -72,8 +72,17 @@
     <Compile Include="HomeWindow.xaml.cs">
       <DependentUpon>HomeWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NewEvent.xaml.cs">
+      <DependentUpon>NewEvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewReunion.xaml.cs">
+      <DependentUpon>NewReunion.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RenewMember.xaml.cs">
       <DependentUpon>RenewMember.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReunionsWindow.xaml.cs">
+      <DependentUpon>ReunionsWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="SignupWindow.xaml.cs">
       <DependentUpon>SignupWindow.xaml</DependentUpon>
@@ -112,7 +121,19 @@
       <DependentUpon>LoginWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="NewEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewReunion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RenewMember.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReunionsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

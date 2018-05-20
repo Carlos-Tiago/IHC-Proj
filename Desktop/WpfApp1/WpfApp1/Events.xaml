@@ -76,6 +76,16 @@
                     <ImageBrush ImageSource="Backgrounds/cozinha.jpg"></ImageBrush>
                 </Grid.Background>
             </Grid>
+            <StackPanel HorizontalAlignment="Right" Margin="50">
+                <materialDesign:PopupBox Margin="10" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
+                    <materialDesign:PopupBox.ToggleContent>
+                        <materialDesign:PackIcon Kind="Plus" Width="30" Height="30" Foreground="White"/>
+                    </materialDesign:PopupBox.ToggleContent>
+                    <StackPanel Width="150">
+                        <Button Content="New Event" Click="NewEventClick"/>
+                    </StackPanel>
+                </materialDesign:PopupBox>
+            </StackPanel>
         </Grid>
 
         <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="#FF211874">

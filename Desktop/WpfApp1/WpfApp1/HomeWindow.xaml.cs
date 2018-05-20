@@ -71,9 +71,9 @@ namespace WpfApp1
 
         private void ReunionsClick(object sender, RoutedEventArgs e)
         {
-            /*Reunions win3 = new Reunions();
+            ReunionsWindow win3 = new ReunionsWindow();
             win3.Show();
-            this.Close();*/
+            this.Close();
         }
 
         private void ButtonCloseMenu_Click(object sender, RoutedEventArgs e)
