@@ -117,5 +117,14 @@ namespace WpfApp1
             win3.Show();
             this.Close();
         }
+
+        private void Enter(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                ReunionAdd.Focus();
+                MemberAdded(sender, null);
+            }
+        }
     }
 }

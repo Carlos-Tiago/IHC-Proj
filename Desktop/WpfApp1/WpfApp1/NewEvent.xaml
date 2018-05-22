@@ -65,9 +65,9 @@
             </ComboBox>
             <Label Margin="50,250,0,0" FontSize="20" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Height="42">Choose a Date</Label>
             <TextBox materialDesign:HintAssist.Hint="HOUR" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="300,245,0,0" Width="60" Height="42"/>
-            <TextBox materialDesign:HintAssist.Hint="MONTH" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="435,245,0,0" Width="75" Height="42"/>
+            <TextBox KeyDown="AddEvent" materialDesign:HintAssist.Hint="MONTH" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="435,245,0,0" Width="75" Height="42"/>
             <TextBox materialDesign:HintAssist.Hint="DAY" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="375,245,0,0" Width="50" Height="42"/>
-            <Button Width="150" Height="35" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 50" Click="MemberAdded">Add Event</Button>
+            <Button x:Name="EventAdded" Width="150" Height="35" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 50" Click="MemberAdded">Add Event</Button>
         </Grid>
 
         <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="#FF211874">

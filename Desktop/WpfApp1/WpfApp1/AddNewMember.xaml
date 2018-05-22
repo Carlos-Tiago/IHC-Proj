@@ -56,16 +56,17 @@
             <TextBox materialDesign:HintAssist.Hint="AGE" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" Margin="50,150,49.6,0" Grid.ColumnSpan="2"></TextBox>
             <TextBox materialDesign:HintAssist.Hint="COURSE" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" Margin="50,200,49.6,0" Grid.ColumnSpan="2"></TextBox>
             <TextBox materialDesign:HintAssist.Hint="COURSE YEAR" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" Margin="50,0,49.6,215.4" Grid.ColumnSpan="2"></TextBox>
+            <Label Margin="50 325 0 0"  Foreground="White" FontSize="20">Type of Member</Label>
             <ComboBox x:Name="selectOption" Text="Select Option" 
                  SelectionChanged="selectOption_SelectionChanged" 
                  SelectedValue="{Binding VMselectedOption, Mode=TwoWay}" 
-                 SelectedValuePath="Content" FontSize="18" Foreground="Black" VerticalAlignment="Bottom" Margin="0 125" HorizontalAlignment="Center" Width="150" Height="35" BorderBrush="Black">
+                 SelectedValuePath="Content" FontSize="18" Margin="211,397,653,79" Width="150" Height="35" BorderBrush="White" KeyDown="Enter">
                 <ComboBoxItem Name="cbb1" Foreground="Black" FontSize="18">President</ComboBoxItem>
                 <ComboBoxItem Name="cbb2" Foreground="Black" FontSize="18">Treasurer</ComboBoxItem>
                 <ComboBoxItem Name="cbb3" Foreground="Black" FontSize="18">Event Organizer</ComboBoxItem>
                 <ComboBoxItem Name="cbb4" Foreground="Black" FontSize="18">Spokesperson</ComboBoxItem>
             </ComboBox>
-            <Button Width="150" Height="35" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 50" Click="MemberAdded">Add Member</Button>
+            <Button x:Name="AddMember" Width="150" Height="35" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 50" Click="MemberAdded">Add Member</Button>
         </Grid>
         
         <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="#FF211874">

@@ -122,6 +122,15 @@ namespace WpfApp1
             win.Show();
             this.Close();
         }
+
+        private void Enter(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                AddMember.Focus();
+                MemberAdded(sender, null);
+            }
+        }
     }
 }
 
