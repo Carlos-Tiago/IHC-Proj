@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        mc:Ignorable="d" Height="600" Width="1080" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Foreground="White">
+        mc:Ignorable="d" KeyDown="Enter" Height="600" Width="1080" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Foreground="White">
     <Window.Resources>
         <Storyboard x:Key="MenuOpen">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
@@ -63,7 +63,7 @@
                 <ComboBoxItem Name="cbb4" Foreground="Black" FontSize="18">Member4</ComboBoxItem>
             </ComboBox>
             <Label Margin="50 200" FontSize="20" Foreground="White">Choose a Time Period</Label>
-            <ComboBox x:Name="selectOption2" Text="Select Option" 
+            <ComboBox  x:Name="selectOption2" Text="Select Option" 
                  SelectionChanged="selectOption_SelectionChanged" 
                  SelectedValue="{Binding VMselectedOption, Mode=TwoWay}" 
                  SelectedValuePath="Content" Margin="300 200" HorizontalAlignment="Left" FontSize="18" Foreground="Black" VerticalAlignment="Top" Width="150" Height="35" BorderBrush="Black">
@@ -72,7 +72,7 @@
                 <ComboBoxItem Name="cb3" Foreground="Black" FontSize="18">6 Months</ComboBoxItem>
                 <ComboBoxItem Name="cb4" Foreground="Black" FontSize="18">1 Year</ComboBoxItem>
             </ComboBox>
-            <Button Width="150" Height="35" VerticalAlignment="Bottom" Margin="0 70" Click="MemberAdded">Renew Member</Button>
+            <Button x:Name="MemberAdd" Width="150" Height="35" VerticalAlignment="Bottom" Margin="0 70" Click="MemberAdded">Renew Member</Button>
         </Grid>
         
         <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="#FF211874">

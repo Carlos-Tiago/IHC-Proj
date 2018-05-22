@@ -49,7 +49,7 @@ namespace WpfApp1
 
         private void AccountClick(object sender, RoutedEventArgs e)
         {
-            AccountWindow win3 = new AccountWindow();
+            HomeWindow win3 = new HomeWindow();
             win3.Show();
             this.Close();
         }
@@ -70,9 +70,9 @@ namespace WpfApp1
 
         private void ReunionsClick(object sender, RoutedEventArgs e)
         {
-            /*Reunions win3 = new Reunions();
+            ReunionsWindow win3 = new ReunionsWindow();
             win3.Show();
-            this.Close();*/
+            this.Close();
         }
 
         private void ButtonCloseMenu_Click(object sender, RoutedEventArgs e)
@@ -110,6 +110,14 @@ namespace WpfApp1
 
         }
 
-      
+        private void Enter(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Confirm.Focus();
+                AccountClick(sender, null);
+            }
+        }
+
     }
 }

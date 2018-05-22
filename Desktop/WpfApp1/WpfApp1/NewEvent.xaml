@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        mc:Ignorable="d" Height="600" Width="1080" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Foreground="White">
+        mc:Ignorable="d" KeyDown="AddEvent" Height="600" Width="1080" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Foreground="White">
     <Window.Resources>
         <Storyboard x:Key="MenuOpen">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
@@ -65,9 +65,9 @@
             </ComboBox>
             <Label Margin="50,250,0,0" FontSize="20" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Height="42">Choose a Date</Label>
             <TextBox materialDesign:HintAssist.Hint="HOUR" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="300,245,0,0" Width="60" Height="42"/>
-            <TextBox materialDesign:HintAssist.Hint="MONTH" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="435,245,0,0" Width="75" Height="42"/>
+            <TextBox  materialDesign:HintAssist.Hint="MONTH" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="435,245,0,0" Width="75" Height="42"/>
             <TextBox materialDesign:HintAssist.Hint="DAY" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="375,245,0,0" Width="50" Height="42"/>
-            <Button Width="150" Height="35" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 50" Click="MemberAdded">Add Event</Button>
+            <Button x:Name="EventAdded" Width="150" Height="35" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 50" Click="MemberAdded">Add Event</Button>
         </Grid>
 
         <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="#FF211874">

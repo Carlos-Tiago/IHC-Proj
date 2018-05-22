@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
 namespace WpfApp1
 {
     /// <summary>
@@ -37,6 +36,13 @@ namespace WpfApp1
             SignupWindow win4 = new SignupWindow();
             win4.Show();
             this.Close();
+        }
+
+        private void Enter(object sender, KeyEventArgs e) {
+            if (e.Key == Key.Enter) {
+                LoginButton.Focus();
+                ButtonLogin_Click(sender, null);
+            }
         }
     }
 }

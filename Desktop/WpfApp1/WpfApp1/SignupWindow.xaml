@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        mc:Ignorable="d" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Foreground="White">
+        mc:Ignorable="d" KeyDown="Enter" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Foreground="White">
     <Grid>
         <Rectangle Height="280" VerticalAlignment="Top">
             <Rectangle.Fill>
@@ -28,6 +28,6 @@
                 <PasswordBox materialDesign:HintAssist.Hint="REPEAT PASSWORD" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0 10" Foreground="Gray" FontSize="18"></PasswordBox>
             </StackPanel>
         </Grid>
-        <Button VerticalAlignment="Bottom" Margin="0,40" Width="150" Content="SIGN UP" Click="ButtonSignUp_Click"></Button>
+        <Button x:Name="Signed" VerticalAlignment="Bottom" Margin="0,40" Width="150" Content="SIGN UP" Click="ButtonSignUp_Click"></Button>
     </Grid>
 </Window>

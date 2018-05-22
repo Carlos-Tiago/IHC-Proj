@@ -50,6 +50,21 @@
             <Grid.Background>
                 <ImageBrush ImageSource="Backgrounds/home.jpg"></ImageBrush>
             </Grid.Background>
+            <Grid Margin="50 50 535 50" >
+                <Label FontSize="25" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold">This Week's Events!</Label>
+                <Label FontSize="20" Foreground="White" FontWeight="Bold"></Label>
+                <Label FontSize="20" Margin="50 125" Foreground="White" FontWeight="Bold">Football with Beiramar</Label>
+                <Label FontSize="20" Margin="50 175" Foreground="White" FontWeight="Bold">Cooking with UA</Label>
+                <Label FontSize="20" Margin="50 75" Foreground="White" FontWeight="Bold" >Learning with Zonaverde</Label>
+
+
+            </Grid>
+            <Grid Margin="535 50 50 50" >
+                <Label FontSize="25" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold">Important Reunions!</Label>
+                <Label FontSize="20" Foreground="White" Margin="50 100" FontWeight="Bold">21st May @ 10 am</Label>
+                <Label FontSize="20" Foreground="White" Margin="50 150" FontWeight="Bold">22nd May @ 11 am</Label>
+                <Label></Label>
+            </Grid>
         </Grid>
 
         <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="#FF211874">

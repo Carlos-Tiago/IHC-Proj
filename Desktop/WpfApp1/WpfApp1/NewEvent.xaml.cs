@@ -129,5 +129,14 @@ namespace WpfApp1
         {
             var selectedValue = selectOption.SelectedValue;
         }
+
+        private void AddEvent(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                EventAdded.Focus();
+                MemberAdded(sender, null);
+            }
+        }
     }
 }
