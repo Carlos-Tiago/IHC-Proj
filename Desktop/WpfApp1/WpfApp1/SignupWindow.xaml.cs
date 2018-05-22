@@ -26,7 +26,9 @@ namespace WpfApp1
 
         private void ButtonSignUp_Click(object sender, RoutedEventArgs e)
         {
-
+            LoginWindow win = new LoginWindow();
+            win.Show();
+            this.Close();
         }
     }
 }
