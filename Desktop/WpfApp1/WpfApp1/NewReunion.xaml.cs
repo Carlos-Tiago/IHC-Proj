@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.Diagnostics;
 using System.Windows.Navigation;
 using System.Windows.Controls.Primitives;
+using Tulpep.NotificationWindow;
 
 namespace WpfApp1
 {
@@ -113,6 +114,10 @@ namespace WpfApp1
 
         private void MemberAdded(object sender, RoutedEventArgs e)
         {
+            PopupNotifier popup = new PopupNotifier();
+            popup.TitleText = "";
+            popup.ContentText = "Reunion added successfuly!";
+            popup.Popup();
             HomeWindow win3 = new HomeWindow();
             win3.Show();
             this.Close();

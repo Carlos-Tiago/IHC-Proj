@@ -114,3 +114,4 @@ C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\ReunionsWindow.g.cs
 C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\NewEvent.baml
 C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\NewReunion.baml
 C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\ReunionsWindow.baml
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\bin\Debug\Tulpep.NotificationWindow.dll
