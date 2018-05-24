@@ -31,7 +31,7 @@
     </Window.Triggers>
 
     <Grid>
-        
+
         <Grid Height="60" VerticalAlignment="Top" Background="#FF26569B">
             <TextBlock Text="AE de IHC" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22"></TextBlock>
             <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right">
@@ -50,26 +50,42 @@
             <Grid.Background>
                 <ImageBrush ImageSource="Backgrounds/home.jpg"></ImageBrush>
             </Grid.Background>
-            <Grid Margin="50 50 535 50" >
-                <Label FontSize="25" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold">This Week's Events!</Label>
-                <Label FontSize="20" Foreground="White" FontWeight="Bold"></Label>
-                <Label FontSize="20" Margin="50 125" Foreground="White" FontWeight="Bold">Football with Beiramar</Label>
-                <Label FontSize="20" Margin="50 175" Foreground="White" FontWeight="Bold">Cooking with UA</Label>
-                <Label FontSize="20" Margin="50 75" Foreground="White" FontWeight="Bold" >Learning with Zonaverde</Label>
-
-
+            <Grid Margin="50 50 535 50">
+                <Border BorderBrush="White" BorderThickness="5">
+                </Border>
+                <Label FontSize="25" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold" Grid.Column="1" Margin="73.7,0,94.6,0.4">This Week's Events!</Label>
+                <Label FontSize="20" Foreground="White" FontWeight="Bold" Grid.ColumnSpan="2" Margin="0,0,-0.4,0.4"></Label>
+                <Label FontSize="20" Margin="28.7,125,49.6,125.4" Foreground="White" FontWeight="Bold" Grid.Column="1">Football with Beiramar</Label>
+                <Label FontSize="20" Margin="28.7,175,49.6,175.4" Foreground="White" FontWeight="Bold" Grid.Column="1">Cooking with UA</Label>
+                <Label FontSize="20" Margin="28.7,75,49.6,75.4" Foreground="White" FontWeight="Bold" Grid.Column="1" >Learning with Zonaverde</Label>
+                <materialDesign:PopupBox VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,19.6,20.4" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False" Grid.Column="1">
+                    <materialDesign:PopupBox.ToggleContent>
+                        <materialDesign:PackIcon Kind="PlusBox" Width="30" Height="30" Foreground="White"/>
+                    </materialDesign:PopupBox.ToggleContent>
+                    <StackPanel Width="150">
+                        <Button Content="New Event" Click="NewEventClick"/>
+                    </StackPanel>
+                </materialDesign:PopupBox>
             </Grid>
             <Grid Margin="535 50 50 50" >
+                <Border BorderBrush="White" BorderThickness="5">
+                </Border>
                 <Label FontSize="25" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold">Important Reunions!</Label>
                 <Label FontSize="20" Foreground="White" Margin="50 100" FontWeight="Bold">21st May @ 10 am</Label>
                 <Label FontSize="20" Foreground="White" Margin="50 150" FontWeight="Bold">22nd May @ 11 am</Label>
-                <Label></Label>
+                <materialDesign:PopupBox VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
+                    <materialDesign:PopupBox.ToggleContent>
+                        <materialDesign:PackIcon Kind="PlusBox" Width="30" Height="30" Foreground="White"/>
+                    </materialDesign:PopupBox.ToggleContent>
+                    <StackPanel Width="150">
+                        <Button Content="New Reunion" Click="NewReunionClick"/>
+                    </StackPanel>
+                </materialDesign:PopupBox>
             </Grid>
         </Grid>
 
         <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="#FF211874">
             <StackPanel>
-
                 <Grid Height="60" Background="White">
                     <Button x:Name="ButtonCloseMenu" Width="60" Height="60" Background="{x:Null}" BorderBrush="{x:Null}"  VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Collapsed" Click="ButtonCloseMenu_Click">
                         <materialDesign:PackIcon Foreground="#FF211874" Kind="ArrowLeft" Width="25" Height="25"/>

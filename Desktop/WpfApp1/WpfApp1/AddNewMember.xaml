@@ -52,10 +52,10 @@
                 <ImageBrush ImageSource="Backgrounds/home.jpg"></ImageBrush>
             </Grid.Background>
             <Label Margin="50,50,49.6,50.4" FontSize="30" Foreground="White" Grid.ColumnSpan="2">Add New Member</Label>
-            <TextBox materialDesign:HintAssist.Hint="NAME" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" Margin="50,100,49.6,0" Grid.ColumnSpan="2"></TextBox>
-            <TextBox materialDesign:HintAssist.Hint="AGE" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" Margin="50,150,49.6,0" Grid.ColumnSpan="2"></TextBox>
-            <TextBox materialDesign:HintAssist.Hint="COURSE" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" Margin="50,200,49.6,0" Grid.ColumnSpan="2"></TextBox>
-            <TextBox materialDesign:HintAssist.Hint="COURSE YEAR" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" Margin="50,0,49.6,215.4" Grid.ColumnSpan="2"></TextBox>
+            <TextBox x:Name="txtName" materialDesign:HintAssist.Hint="NAME" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" Margin="50,100,49.6,0" Grid.ColumnSpan="2"></TextBox>
+            <TextBox x:Name="txtAge" materialDesign:HintAssist.Hint="AGE" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" Margin="50,150,49.6,0" Grid.ColumnSpan="2"></TextBox>
+            <TextBox x:Name="txtCourse" materialDesign:HintAssist.Hint="COURSE" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" Margin="50,200,49.6,0" Grid.ColumnSpan="2"></TextBox>
+            <TextBox x:Name="txtCourseYear" materialDesign:HintAssist.Hint="COURSE YEAR" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" Margin="50,0,49.6,215.4" Grid.ColumnSpan="2"></TextBox>
             <Label Margin="50 325 0 0"  Foreground="White" FontSize="20">Type of Member</Label>
             <ComboBox x:Name="selectOption" Text="Select Option" 
                  SelectionChanged="selectOption_SelectionChanged" 
@@ -67,6 +67,7 @@
                 <ComboBoxItem Name="cbb4" Foreground="Black" FontSize="18">Spokesperson</ComboBoxItem>
             </ComboBox>
             <Button x:Name="AddMember" Width="150" Height="35" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 50" Click="MemberAdded">Add Member</Button>
+            <Label x:Name="label1" Content="" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10" Foreground="Red" Visibility="Visible"></Label>
         </Grid>
         
         <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="#FF211874">

@@ -26,9 +26,21 @@ namespace WpfApp1
 
         private void ButtonSignUp_Click(object sender, RoutedEventArgs e)
         {
-            LoginWindow win = new LoginWindow();
-            win.Show();
-            this.Close();
+            if (txtEmail.Text == "" || txtUsername.Text == "")
+            {
+                label1.Content = "Invalid Username and/or Email!";
+                label1.Visibility = Visibility.Visible;
+            }
+            else if (txtPassword.Password != txtPassword2.Password)
+            {
+                label1.Content = "Passwords don't match!";
+                label1.Visibility = Visibility.Visible;
+            }
+            else {
+                LoginWindow win = new LoginWindow();
+                win.Show();
+                this.Close();
+            } 
         }
 
         private void Enter(object sender, KeyEventArgs e)

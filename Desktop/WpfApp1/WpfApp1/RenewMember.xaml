@@ -63,7 +63,7 @@
                 <ComboBoxItem Name="cbb4" Foreground="Black" FontSize="18">Member4</ComboBoxItem>
             </ComboBox>
             <Label Margin="50 200" FontSize="20" Foreground="White">Choose a Time Period</Label>
-            <ComboBox  x:Name="selectOption2" Text="Select Option" 
+            <ComboBox x:Name="selectOption2" Text="Select Option" 
                  SelectionChanged="selectOption_SelectionChanged" 
                  SelectedValue="{Binding VMselectedOption, Mode=TwoWay}" 
                  SelectedValuePath="Content" Margin="300 200" HorizontalAlignment="Left" FontSize="18" Foreground="Black" VerticalAlignment="Top" Width="150" Height="35" BorderBrush="Black">
@@ -73,6 +73,7 @@
                 <ComboBoxItem Name="cb4" Foreground="Black" FontSize="18">1 Year</ComboBoxItem>
             </ComboBox>
             <Button x:Name="MemberAdd" Width="150" Height="35" VerticalAlignment="Bottom" Margin="0 70" Click="MemberAdded">Renew Member</Button>
+            <Label x:Name="label1" Content="" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10" Foreground="Red" Visibility="Visible"></Label>
         </Grid>
         
         <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="#FF211874">

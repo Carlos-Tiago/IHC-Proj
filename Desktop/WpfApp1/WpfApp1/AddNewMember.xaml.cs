@@ -119,13 +119,26 @@ namespace WpfApp1
 
         private void MemberAdded(object sender, RoutedEventArgs e)
         {
-            PopupNotifier popup = new PopupNotifier();
-            popup.TitleText = "";
-            popup.ContentText = "Member added successfuly!";
-            popup.Popup();
-            HomeWindow win = new HomeWindow();
-            win.Show();
-            this.Close();
+            int age, courseyear;
+            bool isNumeric1 = int.TryParse(txtAge.Text, out age);
+            bool isNumeric2 = int.TryParse(txtCourseYear.Text, out courseyear);
+            if (txtName.Text == "" || txtAge.Text == "" || txtCourse.Text == "" || txtCourseYear.Text == "" || selectOption.SelectedValue == null)
+            {
+                label1.Content = "You must fill in all the fields!";
+            }
+            else if (isNumeric1 == false || isNumeric2 == false)
+            {
+                label1.Content = "Age and Course Year must be numbers!";
+            }
+            else {
+                PopupNotifier popup = new PopupNotifier();
+                popup.TitleText = "";
+                popup.ContentText = "Member added successfuly!";
+                popup.Popup();
+                HomeWindow win = new HomeWindow();
+                win.Show();
+                this.Close();
+            }            
         }
 
         private void Enter(object sender, KeyEventArgs e)

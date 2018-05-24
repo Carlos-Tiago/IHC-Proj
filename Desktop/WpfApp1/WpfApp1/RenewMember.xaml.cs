@@ -119,13 +119,18 @@ namespace WpfApp1
 
         private void MemberAdded(object sender, RoutedEventArgs e)
         {
-            PopupNotifier popup = new PopupNotifier();
-            popup.TitleText = "";
-            popup.ContentText = "Member renewed successfuly!";
-            popup.Popup();
-            HomeWindow win = new HomeWindow();
-            win.Show();
-            this.Close();
+            if (selectOption.SelectedValue == null || selectOption2.SelectedValue == null) {
+                label1.Content = "You must fill in all fields!";
+            }
+            else {
+                PopupNotifier popup = new PopupNotifier();
+                popup.TitleText = "";
+                popup.ContentText = "Member renewed successfuly!";
+                popup.Popup();
+                HomeWindow win = new HomeWindow();
+                win.Show();
+                this.Close();
+            }            
         }
 
         private void Enter(object sender, KeyEventArgs e)

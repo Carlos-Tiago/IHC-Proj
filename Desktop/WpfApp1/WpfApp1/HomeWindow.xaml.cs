@@ -27,6 +27,20 @@ namespace WpfApp1
             InitializeComponent();
         }
 
+        private void NewEventClick(object sender, RoutedEventArgs e)
+        {
+            NewEvent win3 = new NewEvent();
+            win3.Show();
+            this.Close();
+        }
+
+        private void NewReunionClick(object sender, RoutedEventArgs e)
+        {
+            NewReunion win3 = new NewReunion();
+            win3.Show();
+            this.Close();
+        }
+
         private void ButtonPopUpLogout_Click(object sender, RoutedEventArgs e)
         {
             LoginWindow win3 = new LoginWindow();

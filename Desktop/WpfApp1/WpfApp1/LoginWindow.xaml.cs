@@ -26,9 +26,15 @@ namespace WpfApp1
 
         private void ButtonLogin_Click(object sender, RoutedEventArgs e)
         {
-            HomeWindow win2 = new HomeWindow();
-            win2.Show();
-            this.Close();
+            if (txtUsername.Text == "" || txtPassword.Password == "") {
+                label1.Content = "Invalid Username and/or Password!";
+                label1.Visibility = Visibility.Visible;
+            }
+            else {
+                HomeWindow win2 = new HomeWindow();
+                win2.Show();
+                this.Close();
+            }
         }
 
         private void Hyperlink_Click(object sender, RoutedEventArgs e)
