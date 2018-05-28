@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        mc:Ignorable="d" Height="600" Width="1080" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Foreground="White">
+        mc:Ignorable="d" KeyDown="AddEvent" Height="600" Width="1080" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Foreground="White">
     <Window.Resources>
         <Storyboard x:Key="MenuOpen">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
@@ -51,7 +51,7 @@
                 <ImageBrush ImageSource="Backgrounds/home.jpg"></ImageBrush>
             </Grid.Background>
             <Label Margin="50,50,49.6,50.4" FontSize="30" Foreground="White" Grid.ColumnSpan="2">Adding a New Event</Label>
-            <TextBox materialDesign:HintAssist.Hint="EVENT NAME" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" Margin="50,125,49.6,0" Grid.ColumnSpan="2"></TextBox>
+            <TextBox x:Name="txtName" materialDesign:HintAssist.Hint="EVENT NAME" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" Margin="50,125,49.6,0" Grid.ColumnSpan="2"></TextBox>
             <Label Margin="50 185" FontSize="20" Foreground="White">Choose a Sponsor</Label>
             <ComboBox x:Name="selectOption" Text="Select Option" 
                  SelectionChanged="selectOption_SelectionChanged" 
@@ -64,10 +64,11 @@
                 <ComboBoxItem Name="cbb5" Foreground="Black" FontSize="18">Beira Mar</ComboBoxItem>
             </ComboBox>
             <Label Margin="50,250,0,0" FontSize="20" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Height="42">Choose a Date</Label>
-            <TextBox materialDesign:HintAssist.Hint="HOUR" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="300,245,0,0" Width="60" Height="42"/>
-            <TextBox materialDesign:HintAssist.Hint="MONTH" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="435,245,0,0" Width="75" Height="42"/>
-            <TextBox materialDesign:HintAssist.Hint="DAY" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="375,245,0,0" Width="50" Height="42"/>
-            <Button Width="150" Height="35" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 50" Click="MemberAdded">Add Event</Button>
+            <TextBox x:Name="txtHour" materialDesign:HintAssist.Hint="HOUR" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="300,245,0,0" Width="60" Height="42"/>
+            <TextBox x:Name="txtMonth" materialDesign:HintAssist.Hint="MONTH" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="435,245,0,0" Width="75" Height="42"/>
+            <TextBox x:Name="txtDay" materialDesign:HintAssist.Hint="DAY" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="375,245,0,0" Width="50" Height="42"/>
+            <Button x:Name="EventAdded" Width="150" Height="35" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 50" Click="MemberAdded">Add Event</Button>
+            <Label x:Name="label1" Content="" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10" Foreground="Red" Visibility="Visible"></Label>
         </Grid>
 
         <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="#FF211874">

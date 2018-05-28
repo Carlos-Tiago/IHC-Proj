@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.Diagnostics;
 using System.Windows.Navigation;
 using System.Windows.Controls.Primitives;
+using Tulpep.NotificationWindow;
 
 namespace WpfApp1
 {
@@ -49,9 +50,27 @@ namespace WpfApp1
 
         private void AccountClick(object sender, RoutedEventArgs e)
         {
-            AccountWindow win3 = new AccountWindow();
-            win3.Show();
-            this.Close();
+            if (txtPassword1.Password == "" || txtPassword2.Password == "" || txtPassword3.Password == "") {
+                label1.Content = "You must fill in all the fields!";
+                label1.Visibility = Visibility.Visible;
+            }
+            else if (txtPassword1.Password == txtPassword2.Password) {
+                label1.Content = "Your current password is equal to the new one!";
+                label1.Visibility = Visibility.Visible;
+            }
+            else if (txtPassword2.Password == txtPassword3.Password) {
+                label1.Content = "New password doesn't match to its confirmation!";
+                label1.Visibility = Visibility.Visible;
+            }
+            else {
+                PopupNotifier popup = new PopupNotifier();
+                popup.TitleText = "";
+                popup.ContentText = "Password updated successfuly!";
+                popup.Popup();
+                HomeWindow win = new HomeWindow();
+                win.Show();
+                this.Close();
+            }
         }
 
         private void EventClick(object sender, RoutedEventArgs e)
@@ -70,9 +89,9 @@ namespace WpfApp1
 
         private void ReunionsClick(object sender, RoutedEventArgs e)
         {
-            /*Reunions win3 = new Reunions();
+            ReunionsWindow win3 = new ReunionsWindow();
             win3.Show();
-            this.Close();*/
+            this.Close();
         }
 
         private void ButtonCloseMenu_Click(object sender, RoutedEventArgs e)
@@ -110,6 +129,14 @@ namespace WpfApp1
 
         }
 
-      
+        private void Enter(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Confirm.Focus();
+                AccountClick(sender, null);
+            }
+        }
+
     }
 }

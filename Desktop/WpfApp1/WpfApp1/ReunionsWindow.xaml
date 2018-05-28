@@ -55,10 +55,10 @@
             <Label Margin="50 125" FontSize="16" Foreground="White" Grid.ColumnSpan="2">-> We need to discuss an event sponsored by Aveiro's hospital.</Label>
             <Label Margin="50 175" FontSize="20" Foreground="White" Grid.ColumnSpan="2">Tuesday 22nd May @ 11am</Label>
             <Label Margin="50 200" FontSize="16" Foreground="White" Grid.ColumnSpan="2">-> Talking with our treasurer; How good are we going?</Label>
-            <StackPanel HorizontalAlignment="Right" Margin="50">
+            <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="25">
                 <materialDesign:PopupBox Margin="10" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
                     <materialDesign:PopupBox.ToggleContent>
-                        <materialDesign:PackIcon Kind="Plus" Width="30" Height="30" Foreground="White"/>
+                        <materialDesign:PackIcon Kind="PlusBox" Width="30" Height="30" Foreground="White"/>
                     </materialDesign:PopupBox.ToggleContent>
                     <StackPanel Width="150">
                         <Button Content="New Reunion" Click="NewReunionClick"/>

@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.Diagnostics;
 using System.Windows.Navigation;
 using System.Windows.Controls.Primitives;
+using Tulpep.NotificationWindow;
 
 namespace WpfApp1
 {
@@ -113,9 +114,37 @@ namespace WpfApp1
 
         private void MemberAdded(object sender, RoutedEventArgs e)
         {
-            HomeWindow win3 = new HomeWindow();
-            win3.Show();
-            this.Close();
+            int date, hour, month;
+            bool isNumeric1 = int.TryParse(txtDay.Text, out date);
+            bool isNumeric2 = int.TryParse(txtMonth.Text, out month);
+            bool isNumeric3 = int.TryParse(txtHour.Text, out hour);
+            if (txtDescription.Text == "" || txtHour.Text == "" || txtDay.Text == "" || txtMonth.Text == "")
+            {
+                label1.Content = "You must fill in all the fields!";
+            }
+            else if (isNumeric1 == false || isNumeric2 == false || isNumeric3 == false)
+            {
+                label1.Content = "Hour, Date and Month must be numbers!";
+            }
+            else
+            {
+                PopupNotifier popup = new PopupNotifier();
+                popup.TitleText = "";
+                popup.ContentText = "Reunion added successfuly!";
+                popup.Popup();
+                HomeWindow win3 = new HomeWindow();
+                win3.Show();
+                this.Close();
+            }            
+        }
+
+        private void Enter(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                ReunionAdd.Focus();
+                MemberAdded(sender, null);
+            }
         }
     }
 }

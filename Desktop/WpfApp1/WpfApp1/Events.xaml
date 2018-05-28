@@ -51,12 +51,12 @@
                 <ImageBrush ImageSource="Backgrounds/home.jpg"></ImageBrush>
             </Grid.Background>
             <Label Margin="50,50,49.6,50.4" FontSize="30" Foreground="White" Grid.ColumnSpan="2">This Week's Events</Label>
-            <Label FontSize="18" Foreground="White" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="25" FontWeight="Bold">Sponsored By SportZone</Label>
-            <Label FontSize="18" Foreground="White" VerticalAlignment="Bottom" Margin="90 25" FontWeight="Bold">Sponsored By ZonaVerde</Label>
-            <Label FontSize="18" Foreground="White" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="100 25" FontWeight="Bold">Sponsored By Refeitório</Label>
-            <Label FontSize="18" Foreground="White" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="50" FontWeight="Bold">Friday 25th May @ 4pm</Label>
-            <Label FontSize="18" Foreground="White" VerticalAlignment="Bottom" Margin="80 50" FontWeight="Bold">Monday 21st May @ 10am</Label>
-            <Label FontSize="18" Foreground="White" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="75 50" FontWeight="Bold">Wednesday 23rd May @ 7pm</Label>
+            <Label FontSize="18" Foreground="White" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="50" FontWeight="Bold">Sponsored By SportZone</Label>
+            <Label FontSize="18" Foreground="White" VerticalAlignment="Bottom" Margin="90 50" FontWeight="Bold">Sponsored By ZonaVerde</Label>
+            <Label FontSize="18" Foreground="White" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="100 50" FontWeight="Bold">Sponsored By Refeitório</Label>
+            <Label FontSize="18" Foreground="White" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="75" FontWeight="Bold">Friday 25th May @ 4pm</Label>
+            <Label FontSize="18" Foreground="White" VerticalAlignment="Bottom" Margin="80 75" FontWeight="Bold">Monday 21st May @ 10am</Label>
+            <Label FontSize="18" Foreground="White" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="75 75" FontWeight="Bold">Wednesday 23rd May @ 7pm</Label>
             <Grid Height="300" Width="300" Margin="50 125" VerticalAlignment="Top" HorizontalAlignment="Left">
                 <Grid.Background>
                     <ImageBrush ImageSource="Backgrounds/palestra.jpeg"></ImageBrush>
@@ -76,10 +76,10 @@
                     <ImageBrush ImageSource="Backgrounds/cozinha.jpg"></ImageBrush>
                 </Grid.Background>
             </Grid>
-            <StackPanel HorizontalAlignment="Right" Margin="50">
+            <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="25">
                 <materialDesign:PopupBox Margin="10" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
                     <materialDesign:PopupBox.ToggleContent>
-                        <materialDesign:PackIcon Kind="Plus" Width="30" Height="30" Foreground="White"/>
+                        <materialDesign:PackIcon Kind="PlusBox" Width="30" Height="30" Foreground="White"/>
                     </materialDesign:PopupBox.ToggleContent>
                     <StackPanel Width="150">
                         <Button Content="New Event" Click="NewEventClick"/>

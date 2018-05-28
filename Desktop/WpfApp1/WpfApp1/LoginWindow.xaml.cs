@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
 namespace WpfApp1
 {
     /// <summary>
@@ -28,9 +27,15 @@ namespace WpfApp1
 
         private void ButtonLogin_Click(object sender, RoutedEventArgs e)
         {
-            HomeWindow win2 = new HomeWindow();
-            win2.Show();
-            this.Close();
+            if (txtUsername.Text == "" || txtPassword.Password == "") {
+                label1.Content = "Invalid Username and/or Password!";
+                label1.Visibility = Visibility.Visible;
+            }
+            else {
+                HomeWindow win2 = new HomeWindow();
+                win2.Show();
+                this.Close();
+            }
         }
 
         private void Hyperlink_Click(object sender, RoutedEventArgs e)
@@ -38,6 +43,13 @@ namespace WpfApp1
             SignupWindow win4 = new SignupWindow();
             win4.Show();
             this.Close();
+        }
+
+        private void Enter(object sender, KeyEventArgs e) {
+            if (e.Key == Key.Enter) {
+                LoginButton.Focus();
+                ButtonLogin_Click(sender, null);
+            }
         }
     }
 

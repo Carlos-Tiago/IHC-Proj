@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿
 FD:\3ano-Informatica\IHC\Projeto\IHC-Proj\Desktop\WpfApp1\WpfApp1\App.xaml;;
 FD:\3ano-Informatica\IHC\Projeto\IHC-Proj\Desktop\WpfApp1\WpfApp1\AccountWindow.xaml;;
@@ -13,3 +14,20 @@ FD:\3ano-Informatica\IHC\Projeto\IHC-Proj\Desktop\WpfApp1\WpfApp1\SignupWindow.x
 FD:\3ano-Informatica\IHC\Projeto\IHC-Proj\Desktop\WpfApp1\WpfApp1\Sponsors.xaml;;
 FD:\3ano-Informatica\IHC\Projeto\IHC-Proj\Desktop\WpfApp1\WpfApp1\Window1.xaml;;
 
+=======
+﻿
+FC:\Users\olive\Desktop\WpfApp1\WpfApp1\App.xaml;;
+FC:\Users\olive\Desktop\WpfApp1\WpfApp1\AccountWindow.xaml;;
+FC:\Users\olive\Desktop\WpfApp1\WpfApp1\AddNewMember.xaml;;
+FC:\Users\olive\Desktop\WpfApp1\WpfApp1\Events.xaml;;
+FC:\Users\olive\Desktop\WpfApp1\WpfApp1\HomeWindow.xaml;;
+FC:\Users\olive\Desktop\WpfApp1\WpfApp1\LoginWindow.xaml;;
+FC:\Users\olive\Desktop\WpfApp1\WpfApp1\NewEvent.xaml;;
+FC:\Users\olive\Desktop\WpfApp1\WpfApp1\NewReunion.xaml;;
+FC:\Users\olive\Desktop\WpfApp1\WpfApp1\RenewMember.xaml;;
+FC:\Users\olive\Desktop\WpfApp1\WpfApp1\ReunionsWindow.xaml;;
+FC:\Users\olive\Desktop\WpfApp1\WpfApp1\SignupWindow.xaml;;
+FC:\Users\olive\Desktop\WpfApp1\WpfApp1\Sponsors.xaml;;
+FC:\Users\olive\Desktop\WpfApp1\WpfApp1\Window1.xaml;;
+
+>>>>>>> 12a3bdba4d06c27ac25af621d355a91232c68e7b

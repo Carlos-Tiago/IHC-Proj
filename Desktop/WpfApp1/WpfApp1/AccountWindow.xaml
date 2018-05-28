@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        mc:Ignorable="d" Height="600" Width="1080" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Foreground="White">
+        mc:Ignorable="d" Height="600" KeyDown="Enter" Width="1080" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Foreground="White">
     <Window.Resources>
         <Storyboard x:Key="MenuOpen">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
@@ -54,12 +54,13 @@
             <Grid Width="280" Height="270" VerticalAlignment="Center" Margin="10" Background="White">
                 <TextBlock Text="PASSWORD CHANGE" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" Foreground="Gray" FontSize="18" ></TextBlock>
                 <StackPanel VerticalAlignment="Center" Margin="10">
-                    <PasswordBox materialDesign:HintAssist.Hint="CURRENT PASSWORD" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0 10" Foreground="Gray" FontSize="18"></PasswordBox>
-                    <PasswordBox materialDesign:HintAssist.Hint="NEW PASSWORD" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0 10" Foreground="Gray" FontSize="18"></PasswordBox>
-                    <PasswordBox materialDesign:HintAssist.Hint="CONFIRM NEW PASSWORD" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0 10" Foreground="Gray" FontSize="18"></PasswordBox>
+                    <PasswordBox x:Name="txtPassword1" materialDesign:HintAssist.Hint="CURRENT PASSWORD" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0 10" Foreground="Gray" FontSize="18"></PasswordBox>
+                    <PasswordBox x:Name="txtPassword2" materialDesign:HintAssist.Hint="NEW PASSWORD" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0 10" Foreground="Gray" FontSize="18"></PasswordBox>
+                    <PasswordBox x:Name="txtPassword3" materialDesign:HintAssist.Hint="CONFIRM NEW PASSWORD" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0 10" Foreground="Gray" FontSize="18"></PasswordBox>
                 </StackPanel>
             </Grid>
-            <Button Margin="0,105" VerticalAlignment="Bottom" Width="150" Content="CONFIRM"></Button>
+            <Button x:Name="Confirm" Click="AccountClick" Margin="0,105" VerticalAlignment="Bottom" Width="150" Content="CONFIRM"></Button>
+            <Label x:Name="label1" Content="" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10" Foreground="Red" Visibility="Visible"></Label>
         </Grid>
         
         <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="#FF211874">

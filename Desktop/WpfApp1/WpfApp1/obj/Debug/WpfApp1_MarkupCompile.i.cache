@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿WpfApp1
 
 
@@ -18,3 +19,25 @@ AccountWindow.xaml;AddNewMember.xaml;Events.xaml;HomeWindow.xaml;LoginWindow.xam
 
 True
 
+=======
+﻿WpfApp1
+
+
+winexe
+C#
+.cs
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\obj\Debug\
+WpfApp1
+none
+false
+DEBUG;TRACE
+C:\Users\olive\Desktop\WpfApp1\WpfApp1\App.xaml
+12-966034750
+
+20-1629349445
+16-2046729039
+AccountWindow.xaml;AddNewMember.xaml;Events.xaml;HomeWindow.xaml;LoginWindow.xaml;NewEvent.xaml;NewReunion.xaml;RenewMember.xaml;ReunionsWindow.xaml;SignupWindow.xaml;Sponsors.xaml;Window1.xaml;
+
+True
+
+>>>>>>> 12a3bdba4d06c27ac25af621d355a91232c68e7b
