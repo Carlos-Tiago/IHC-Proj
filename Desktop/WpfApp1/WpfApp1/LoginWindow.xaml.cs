@@ -23,6 +23,7 @@ namespace WpfApp1
         public LoginWindow()
         {
             InitializeComponent();
+            this.DataContext = this;
         }
 
         private void ButtonLogin_Click(object sender, RoutedEventArgs e)
@@ -37,6 +38,19 @@ namespace WpfApp1
             SignupWindow win4 = new SignupWindow();
             win4.Show();
             this.Close();
+        }
+    }
+
+    public class EmailValidator : ValidationRule
+    {
+        public override ValidationResult Validate(object value, System.Globalization.CultureInfo cultureInfo)
+        {
+            if ((String)value == "")
+                return new ValidationResult(false, "value cannot be empty.");
+            else if((String)value != "carlos") {
+                return new ValidationResult(false, "value has to be carlos");
+            }
+            return ValidationResult.ValidResult;
         }
     }
 }
